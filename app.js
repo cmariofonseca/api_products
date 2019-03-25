@@ -8,8 +8,7 @@ const mongoose = require('mongoose');
 const productRoutes = require('./api/routes/products');
 const userRoutes = require('./api/routes/user');
 
-const uri = 'mongodb+srv://cmariofonseca:Mongodb19%24@mylisttasks-cof0j.mongodb.net/test?retryWrites=true';
-mongoose.connect(uri, { useNewUrlParser: true }).catch(error => console.log(error.message));
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true }).catch(error => console.log(error.message));
 
 // Middlewares
 app.use(morgan('dev'));

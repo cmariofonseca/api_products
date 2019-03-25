@@ -2,3 +2,7 @@
 
 # dependencies
 /node_modules
+/dist
+
+# files
+/nodemon.json
