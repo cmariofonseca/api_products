@@ -1,5 +1,5 @@
 {
-  "name": "maxim0",
+  "name": "store",
   "version": "1.0.0",
   "description": "A Node.js RESTful API project (build a simple shop API)",
   "main": "index.js",
